@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+  rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+  crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <header id="main-header" class="bg-info text-black p-4 m-4">
+      <div class="container">
+        <h1 id="header-title">Appointments</h1>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card card-body">
+          <div class="row border border-black p-3">
+            <div class="col-2">
+              <button class="btn btn-info w-100" id="previousDate">&lt;</button>
+            </div>
+            <div class="col-8">
+              <h2 class="text-center" id="displayedDate"></h2>
+            </div>
+            <div class="col-2">
+              <button class="btn btn-info w-100" id="nextDate">&gt;</button>
+            </div>
+          </div>
+          <div class="row border border-black p-3">
+            <div class="col-3">
+              Go to date:
+            </div>
+            <div class="col-9">
+              <input class="w-100" type="date" id="gotoDate" />
+            </div>
+          </div>
+          
+          <div class="row">
+            <ul id="appointments" class="list-group">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" id="appointmentForm">
+        <div class="card card-body">
+          <div class="row m-1">
+            <div class="col-md-4">
+              <label for="apmnt_desc">Description</label>
+            </div>
+          </div>
+          <div class="row m-1">
+            <div class="col-md-4">
+              <input type="text" id="appointmentDesc" />
+            </div>
+          </div>
+          <div class="row m-1">
+            <div class="col-md-4">
+              <label for="appointmentDate">Date</label>
+            </div>
+          </div>
+          <div class="row m-1">
+            <div class="col-md-4">
+              <input type="date" id="appointmentDate" />
+            </div>
+          </div>
+          <div class="row m-1">
+            <div class="col-md-4">
+              <label for="appointmentTime">Time</label>
+            </div>
+          </div>
+          <div class="row m-1">
+            <div class="col-md-4">
+              <select id="appointmentTime"></select>
+            </div>
+          </div>
+          <div class="row m-1">
+            <div class="col-md-4">
+              <button id="save">Save</button>
+              <button id="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

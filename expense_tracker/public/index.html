@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Budget Tracker</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Budget Tracker</h1>
+
+    <div id="toastContainer"></div>
+
+    <form id="expenseForm">
+      <label for="expenseName">Expense Name:</label>
+      <input type="text" id="expenseName" required>
+
+      <label for="expenseAmount">Amount:</label>
+      <input type="number" id="expenseAmount" step=".01" required>
+
+      <label for="expenseCategory">Category:</label>
+      <input type="text" id="expenseCategory" required>
+
+      <label for="expenseDate">Date:</label>
+      <input type="text" id="expenseDate" required>
+
+      <input type="submit" value="Add Expense" />
+    </form>
+
+    <div class="container">
+
+      <h2>Monthly expenses</h2>
+      <label for="monthPicker">Display Month:</label>
+      <input type="text" id="monthPicker">
+
+      <table id="expenseTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <canvas id="pieChart" width="100" height="100"></canvas>
+    </div>
+  </div>
+  <script src="../dist/bundle.js"></script>
+</body>
+
+</html>

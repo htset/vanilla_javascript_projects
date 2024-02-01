@@ -1,0 +1,11 @@
+body{
+  padding:30px;
+}
+
+label{
+  font-weight: bold;
+}
+
+.error{
+  color:red;
+}

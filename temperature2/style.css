@@ -1,0 +1,17 @@
+.container{
+  width: 300px;
+  /* this is a flex container*/
+  display: flex;
+  /* items should be placed in a column */
+  flex-direction: column;
+  /* a gap between items */
+  gap: 10px;
+}
+
+.item{
+  width: 100%;
+}
+
+h1{
+  font-size: 1.5em;
+}

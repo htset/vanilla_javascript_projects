@@ -1,0 +1,110 @@
+:root {
+  --icon-width: 250px;
+  --icon-height: 200px;
+  --arrow-width: 50px;
+}
+
+body{
+  background-color: black;
+  color:white;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.logo{
+  width: 200px;
+  padding:20px;
+}
+
+.container{
+  position:relative;
+}
+
+.slider, .slider2 {
+  white-space: nowrap;
+  transition: all 1.0s ease-in-out;
+}
+
+.item {
+  width: var(--icon-width);
+  height: var(--icon-height);
+  display: inline-block;
+  position: relative;
+  color: white;
+  font-size: 0.8rem;
+  transition: all 0.6s ease-in-out;
+  text-align: center;
+}
+
+.item:nth-of-type(1) {
+  margin-left: var(--arrow-width);
+}
+
+.item:hover {
+  transform: scale(1.4);
+  z-index: 50;
+  border: 1px white solid;
+  background-color: darkgray;
+
+}
+
+.item:hover > .description {
+  visibility:visible;
+}
+
+.description{
+  width: var(--icon-width);
+  white-space: pre-line;
+  visibility:hidden;
+}
+
+.descr-text{
+  height: 40px;
+  display:block;
+  overflow: hidden;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.descr-buttons-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+
+}
+
+.descr-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 8px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+img {
+  width: 15rem;
+}
+
+.previous,.previous2, 
+.next, .next2 {
+  width: var(--arrow-width);
+  height: var(--icon-height);
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  color: white;
+  z-index: 100;
+  cursor: pointer;
+
+}
+
+.next, .next2 {
+  right: 0;
+}

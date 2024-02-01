@@ -1,0 +1,61 @@
+#mainClock{
+  width:300px;
+  height:150px;
+  background-color: darkblue;
+  color: white;
+  float:left;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+
+#toggleSettings{
+  position:absolute;
+  bottom:0px;
+  right: 0px;
+  margin:5px;
+  cursor:pointer;  
+}
+
+#clockDisplay{
+  font-size: 3em;
+  font-family: alarm;
+  width:80%;
+  text-align: center;
+}
+
+#settings{
+  width:300px;
+  height:150px;
+  background-color:blueviolet;
+  color: white;
+  float:left;
+  opacity:1.0;
+  transition: opacity 1s linear;
+  display:flex;
+  flex-direction: column;
+}
+
+#settings.fadeOut{
+  width:300px;
+  height:150px;
+  background-color:blueviolet;
+  color: white;
+  float:left;
+  display:flex;
+  flex-direction: column;
+  opacity:0.0;
+  transition: opacity 2s linear;
+}
+
+#timeBox, #buttonBox{
+  margin: auto;
+}
+
+@font-face {
+  font-family: alarm;
+  src: url(alarm_clock.ttf);
+}
+
+

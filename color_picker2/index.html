@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color picker</title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Color picker</h1>
+      <div>
+        <input type="radio" name="decHex" id="dec" checked/> Decimal
+        <input type="radio" name="decHex" id="hex"/> Hex  
+      </div>
+      <label>Red</label>
+      <div>
+        <input type="range" min="0" max="255" id="redRange">
+        <input type="text" id="redText"/>  
+      </div>
+      <label>Green</label>
+      <div>
+        <input type="range" min="0" max="255" id="greenRange">
+        <input type="text" id="greenText"/>  
+      </div>
+      <label>Blue</label>
+      <div>
+        <input type="range" min="0" max="255" id="blueRange">
+        <input type="text" id="blueText"/>  
+      </div>
+      <div id="panel"></div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
